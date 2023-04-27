@@ -9,8 +9,27 @@
 
     </head>
     <body>
-        <a href="/live">Live</a>
-        <a href="/archive">Archiv</a>
+
+        <div class="row">
+            <div class="col-sm">
+              <div class="card text-center" style="">
+                <div class="card-body">
+                    <a href="/live" class="card-link">Live</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm">
+              <div class="card text-center">
+                <div class="card-body">
+                    <a href="/archive">Archiv</a>
+                </div>
+              </div>
+            </div>
+        </div>
+
+        
+        
     </body>
 
     <script src="{{ asset('js/bootstrap.js') }}"></script>
