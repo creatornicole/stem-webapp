@@ -17,7 +17,7 @@ return new class extends Migration
             $table->string('timestamp');
             $table->float("ph");
             $table->float("temp");
-            $table->string("status"); //signal present or past
+            $table->boolean("status"); //signal present or past
             $table->timestamps();
         });
     }
