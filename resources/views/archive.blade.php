@@ -14,13 +14,14 @@
             echo "Successfully connected to DB and DB is ".DB::connection()->getDatabaseName();
         }
     ?>
-    <table class="table table-striped">
+    <table class="table table-bordered">
         <thead>
         <tr>
-            <th scope="col">#</th>
-            <th scope="col">First</th>
-            <th scope="col">Last</th>
-            <th scope="col">Handle</th>
+            <th scope="col">Datum</th>
+            <th scope="col">Uhrzeit</th>
+            <th scope="col">GPS</th>
+            <th scope="col">pH</th>
+            <th scope="col">Temperatur</th>
         </tr>
         </thead>
         <tbody>
@@ -31,7 +32,6 @@
             <td>Otto</td>
             <td>@mdo</td>
         </tr>
-
         </tbody>
     </table>
 </body>
