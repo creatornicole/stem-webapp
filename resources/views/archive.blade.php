@@ -8,7 +8,7 @@
     <link rel="stylesheet" href=" {{ asset('css/bootstrap.min.css') }}">
 </head>
 <body>
-    <h1>Archive</h1>
+    <h1>{{ $heading }}</h1>
     <?php
         if(DB::connection()->getPdo()){
             echo "Successfully connected to DB and DB is ".DB::connection()->getDatabaseName();

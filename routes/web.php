@@ -18,9 +18,13 @@ Route::get('/', function () {
 });
 
 Route::get('/live', function() {
-    return view('live');
+    return view('live', [
+        'heading' => "Live"
+    ]);
 });
 
 Route::get('/archive', function() {
-    return view('archive');
+    return view('archive', [
+        'heading' => "Archiv"
+    ]);
 });
