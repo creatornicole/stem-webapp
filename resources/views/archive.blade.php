@@ -24,8 +24,8 @@
         <!-- foreach -->
         @foreach($measurements as $measurement)
             <tr>
-                <td>{{ $measurement->timestamp }}</td>
-                <td></td>
+                <td>{{ $measurement->date }}</td>
+                <td>{{ $measurement->time }}</td>
                 <td>{{ $measurement->latitude }}, {{ $measurement->longitude }}</td>
                 <td>{{ $measurement->ph }}</td>
                 <td>{{ $measurement->temp }}°C</td>
