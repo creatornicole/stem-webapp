@@ -8,28 +8,21 @@
         <link rel="stylesheet" href=" {{ asset('css/bootstrap.min.css') }}">
 
     </head>
-    <body>
+    <body class="container-fluid" style="height: 100vh;">
 
-        <div class="row">
-            <div class="col-sm">
-              <div class="card text-center" style="">
-                <div class="card-body">
-                    <a href="/live" class="card-link">Live</a>
-                </div>
-              </div>
-            </div>
+        <div class="h-100 d-flex align-items-center justify-content-center">
 
-            <div class="col-sm">
-              <div class="card text-center">
-                <div class="card-body">
-                    <a href="/archive">Archiv</a>
+                <div class="card" style="width: 18rem; height: 22rem;">
+                    <div class="card-body align-items-center d-flex justify-content-center">
+                        <a class="text-decoration-none" href="/live" class="card-link">Live</a>
+                    </div>
                 </div>
-              </div>
-            </div>
+                <div class="card" style="width: 18rem; height: 22rem;">
+                    <div class="card-body align-items-center d-flex justify-content-center">
+                        <a class="text-decoration-none" href="/archive">Archiv</a>
+                    </div>
+                </div>
         </div>
-
-        
-        
     </body>
 
     <script src="{{ asset('js/bootstrap.js') }}"></script>
