@@ -15,7 +15,8 @@ return new class extends Migration
             $table->id();
             $table->string('latitude'); //for GPS marker
             $table->string('longitude'); //for GPS marker
-            $table->string('timestamp');
+            $table->string('date');
+            $table->string('time');
             $table->float("ph");
             $table->float("temp");
             $table->boolean("status"); //signal present or past

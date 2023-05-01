@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\Measurement;
 
 class MeasurementController extends Controller
 {
@@ -11,13 +12,14 @@ class MeasurementController extends Controller
     }
     public function showPresentMeasurements() {
         return view('live', [
-            'heading' => "Live"
+            'heading' => 'Live'
         ]);
     }
 
     public function showPastMeasurements() {
         return view('archive', [
-            'heading' => "Archiv"
+            'heading' => 'Archiv',
+            'measurements' => Measurement::all()
         ]);
     }
 }

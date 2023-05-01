@@ -19,7 +19,8 @@ class MeasurementFactory extends Factory
         return [
             'latitude' => $this->faker->latitude($min = -90, $max = 90),
             'longitude' => $this->faker->longitude($min = -180, $max = 180),
-            'timestamp' => $this->faker->dateTime($max = 'now', $timezone = null),
+            'date' => $this->faker->date($format = 'Y-m-d', $max = 'now'),
+            'time' => $this->faker->time($format = 'H:i:s', $max = 'now'),
             'ph' => $this->faker->randomFloat($nbMaxDecimals = NULL, $min = 0, $max = 14), //ph value range 0-14
             'temp' => $this->faker->numberBetween($min = 0, $max = 45),
             'status' => $this->faker->boolean($chanceOfGettingTrue = 50) //0 -> live, 1 -> archive

@@ -9,11 +9,7 @@
 </head>
 <body>
     <h1>{{ $heading }}</h1>
-    <?php
-        if(DB::connection()->getPdo()){
-            echo "Successfully connected to DB and DB is ".DB::connection()->getDatabaseName();
-        }
-    ?>
+
     <table class="table table-bordered">
         <thead>
         <tr>
@@ -26,12 +22,15 @@
         </thead>
         <tbody>
         <!-- foreach -->
-        <tr>
-            <th scope="row">1</th>
-            <td>Mark</td>
-            <td>Otto</td>
-            <td>@mdo</td>
-        </tr>
+        @foreach($measurements as $measurement)
+            <tr>
+                <td>{{ $measurement->timestamp }}</td>
+                <td></td>
+                <td>{{ $measurement->latitude }}, {{ $measurement->longitude }}</td>
+                <td>{{ $measurement->ph }}</td>
+                <td>{{ $measurement->temp }}°C</td>
+            </tr>
+        @endforeach
         </tbody>
     </table>
 </body>
