@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use \App\Http\Controllers\MeasurementController;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,18 +14,6 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('index');
-});
-
-Route::get('/live', function() {
-    return view('live', [
-        'heading' => "Live"
-    ]);
-});
-
-Route::get('/archive', function() {
-    return view('archive', [
-        'heading' => "Archiv"
-    ]);
-});
+Route::get('/', [MeasurementController::class, 'showStartpage']);
+Route::get('/live', [MeasurementController::class, 'showPresentMeasurements']);
+Route::get('/archive', [MeasurementController::class, 'showPastMeasurements']);
