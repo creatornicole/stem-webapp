@@ -13,7 +13,8 @@ return new class extends Migration
     {
         Schema::create('measurements', function (Blueprint $table) {
             $table->id();
-            $table->string('gps');
+            $table->string('latitude'); //for GPS marker
+            $table->string('longitude'); //for GPS marker
             $table->string('timestamp');
             $table->float("ph");
             $table->float("temp");

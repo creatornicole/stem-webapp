@@ -17,7 +17,8 @@ class MeasurementFactory extends Factory
     public function definition(): array
     {
         return [
-            'gps' => $this->faker->latitude($min = -90, $max = 90),
+            'latitude' => $this->faker->latitude($min = -90, $max = 90),
+            'longitude' => $this->faker->longitude($min = -180, $max = 180),
             'timestamp' => $this->faker->dateTime($max = 'now', $timezone = null),
             'ph' => $this->faker->randomFloat($nbMaxDecimals = NULL, $min = 0, $max = 14), //ph value range 0-14
             'temp' => $this->faker->numberBetween($min = 0, $max = 45),
