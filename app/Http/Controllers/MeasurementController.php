@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Measurement;
+use \Illuminate\Support\Facades\DB;
 
 class MeasurementController extends Controller
 {
@@ -11,15 +12,25 @@ class MeasurementController extends Controller
         return view('index');
     }
     public function showPresentMeasurements() {
+        $currentMeasurements = Measurement::where("status", "=", "1")->get();
+
         return view('live', [
-            'heading' => 'Live'
+            'heading' => 'Live',
+            'measurements' => $currentMeasurements
         ]);
     }
 
     public function showPastMeasurements() {
+        $pastMeasurements = Measurement::where("status", "=", "0")->get();
+        
         return view('archive', [
             'heading' => 'Archiv',
-            'measurements' => Measurement::all()
+            'measurements' => $pastMeasurements
         ]);
+    }
+
+    public function archiveMeasurements() {
+    
+        redirect('/live');
     }
 }

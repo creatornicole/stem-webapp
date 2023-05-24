@@ -18,8 +18,19 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "ad888b213280cda2",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.2.8"
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -64,12 +75,21 @@
               "type": "starred",
               "state": {}
             }
+          },
+          {
+            "id": "64e33f18d0960bf6",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
           }
         ]
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "ddc83f43265775ab",
@@ -146,7 +166,7 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "58c3631ab0f67e15",
+  "active": "ad888b213280cda2",
   "lastOpenFiles": [
     "public/hot",
     "storage/logs/laravel.log",

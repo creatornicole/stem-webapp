@@ -24,3 +24,18 @@ least 15 minutes per battery set, the distance of the remote
 control should be at least 200 m. The data should be
 transmitted directly live to an evaluation unit in a freely
 convertible format and stored.
+
+---
+
+## Live Page
+- to view current 
+- automatic transfer to archive once day is over
+- manual transfer to archive via button "Archive"
+
+## ToDo
+### Live View
+- add quality to measurement (all values good -> green circle, one measurement value not good -> yellow circle, more than one value not good -> red circle)
+- on button press "Map" show travelled distance of drone on map
+- on button press "Analyse" input diagrams
+- on button press "Safe" save as .xlsx
+- on button press "Archive" change status -> data shown on Archive Page (status 1 -> live, status 0 -> archive)

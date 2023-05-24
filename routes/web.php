@@ -15,5 +15,9 @@ use \App\Http\Controllers\MeasurementController;
 */
 
 Route::get('/', [MeasurementController::class, 'showStartpage']);
+
 Route::get('/live', [MeasurementController::class, 'showPresentMeasurements']);
+Route::get('/live/changeStatus', [MeasurementController::class, 'archiveMeasurements']);
+
+
 Route::get('/archive', [MeasurementController::class, 'showPastMeasurements']);

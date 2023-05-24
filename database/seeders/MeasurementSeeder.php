@@ -13,6 +13,6 @@ class MeasurementSeeder extends Seeder
      */
     public function run(): void
     {
-        $user = Measurement::factory()->count(10)->create();
+        $user = Measurement::factory()->count(40)->create();
     }
 }
