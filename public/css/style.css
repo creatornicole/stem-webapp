@@ -5,3 +5,12 @@ body {
 .card-header {
     background-color: #002F5D;
 }
+
+a {
+    color: white;
+}
+
+a:hover {
+    color: white;
+    font-weight: bold;
+}
