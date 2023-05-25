@@ -30,7 +30,8 @@ class MeasurementController extends Controller
     }
 
     public function archiveMeasurements() {
-    
-        redirect('/live');
+        DB::table('measurements')->where('status', 1)->update(['status' => 0]);
+
+        return redirect('/live');
     }
 }
