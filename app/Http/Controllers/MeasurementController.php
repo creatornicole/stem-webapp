@@ -11,9 +11,10 @@ class MeasurementController extends Controller
     public function showStartpage() {
         return view('index');
     }
+
     public function showPresentMeasurements() {
         $currentMeasurements = Measurement::where("status", "=", "1")->get();
-
+        
         return view('live', [
             'heading' => 'Live',
             'measurements' => $currentMeasurements
