@@ -52,7 +52,10 @@
                   </table>
                 </div>
                 <div class="col-sm" style="text-align: center;">
-                  Google Maps
+                    
+                    <iframe id="googleMapsFrame" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1277477.8507661172!2d12.491479825886458!3d51.291363598784976!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47a851c4adb5e545%3A0x91a95da0b8c28d69!2sGoogle%20Berlin!5e0!3m2!1sde!2sde!4v1685027434145!5m2!1sde!2sde" 
+                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>                   
+
                 </div>
               </div>
         </div>
