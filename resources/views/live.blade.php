@@ -51,8 +51,8 @@
                       </tbody>
                   </table>
                 </div>
-                <div class="col-sm" style="text-align: center;">           
-                    <div id="map" style="width:100%; height: 400px"></div>
+                <div class="col-sm">           
+                    <div id="map" style="height: 50vh;"></div>
                 </div>
               </div>
         </div>
