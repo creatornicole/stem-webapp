@@ -39,6 +39,7 @@ convertible format and stored.
 - on button press "Analyse" input diagrams
 - on button press "Safe" save as .xlsx
 - on button press "Archive" change status -> data shown on Archive Page (status 1 -> live, status 0 -> archive)
+- Event Listener Database Update -> if new entry was added to database -> update live view to show new entry
 
 ### Google Maps View Live View
 - fixed positioning
