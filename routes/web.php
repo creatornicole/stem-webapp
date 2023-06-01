@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use \App\Http\Controllers\MeasurementController;
+use \App\Http\Controllers\GoogleController;
 
 /*
 |--------------------------------------------------------------------------
@@ -21,3 +22,5 @@ Route::get('/live/changeStatus', [MeasurementController::class, 'archiveMeasurem
 
 
 Route::get('/archive', [MeasurementController::class, 'showPastMeasurements']);
+
+Route::get('/google-autocomplete', [GoogleController::class, 'index']);

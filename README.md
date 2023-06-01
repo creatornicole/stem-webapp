@@ -39,3 +39,7 @@ convertible format and stored.
 - on button press "Analyse" input diagrams
 - on button press "Safe" save as .xlsx
 - on button press "Archive" change status -> data shown on Archive Page (status 1 -> live, status 0 -> archive)
+
+## References
+- [How to Add Google Map in Larvael?](https://www.itsolutionstuff.com/post/how-to-add-google-map-in-laravelexample.html)
+- [Get Lat Long from Address](https://www.latlong.net/convert-address-to-lat-long.html)
