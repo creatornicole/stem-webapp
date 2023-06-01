@@ -46,6 +46,9 @@ convertible format and stored.
 - on click marker -> show values of pH, temp, date, time
 - click on table entry -> go to marker in Google Map
 
+### Further Possible Improvements
+- add Graphs
+
 ## References
 - [How to Add Google Map in Larvael?](https://www.itsolutionstuff.com/post/how-to-add-google-map-in-laravelexample.html)
 - [Get Lat Long from Address](https://www.latlong.net/convert-address-to-lat-long.html)
