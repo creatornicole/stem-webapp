@@ -22,3 +22,5 @@ Route::get('/live/changeStatus', [MeasurementController::class, 'archiveMeasurem
 
 
 Route::get('/archive', [MeasurementController::class, 'showPastMeasurements']);
+
+Route::get('/gmaps', [GoogleController::class, 'gmaps']);

@@ -59,20 +59,24 @@
     </div>  
   
     <script type="text/javascript">
+        document.addEventListener('DOMContentLoaded', function() {
+            initMap();
+        });
+
         function initMap() {
-          const myLatLng = { lat: 50.988766, lng: 12.968090 };
-          const map = new google.maps.Map(document.getElementById("map"), {
-            zoom: 17,
-            center: myLatLng,
-          });
+            var mapOptions = {
+                center: { lat: 50.988766, lng: 12.968090 },
+                zoom: 17
+            };
+
+            var map = new google.maps.Map(document.getElementById("map"), mapOptions);
   
-          new google.maps.Marker({
-            position: myLatLng,
-            map,
-          });
-        }
-  
-        window.initMap = initMap;
+            var marker = new google.maps.Marker({
+                position: { lat: 50.988766, lng: 12.968090 },
+                map: map
+            });
+        }      
+
     </script>
   
   <script type="text/javascript" src="https://maps.google.com/maps/api/js?key={{ env('GOOGLE_MAP_KEY') }}&callback=initMap" ></script>
