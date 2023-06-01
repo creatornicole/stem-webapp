@@ -15,7 +15,7 @@ class MeasurementSeeder extends Seeder
      */
     public function run(): void
     {
-        $amount = 40;
+        $amount = 10;
 
         Measurement::factory()->count($amount)->create();
 

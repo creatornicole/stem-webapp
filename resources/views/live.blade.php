@@ -59,6 +59,9 @@
     </div>  
   
     <script type="text/javascript">
+
+var measurements = @json($measurements);
+
         document.addEventListener('DOMContentLoaded', function() {
             initMap();
         });
@@ -71,10 +74,12 @@
 
             var map = new google.maps.Map(document.getElementById("map"), mapOptions);
   
-            var marker = new google.maps.Marker({
-                position: { lat: 50.988766, lng: 12.968090 },
-                map: map
-            });
+            @foreach($measurements as $measurement)
+                var marker = new google.maps.Marker({
+                    position: { lat: {{ $measurement->latitude }}, lng: {{ $measurement->longitude }} },
+                    map: map
+                });
+            @endforeach
         }      
 
     </script>

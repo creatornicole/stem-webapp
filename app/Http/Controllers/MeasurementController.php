@@ -17,7 +17,7 @@ class MeasurementController extends Controller
         
         return view('live', [
             'heading' => 'Live',
-            'measurements' => $currentMeasurements
+            'measurements' => $currentMeasurements,
         ]);
     }
 
