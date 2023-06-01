@@ -22,5 +22,3 @@ Route::get('/live/changeStatus', [MeasurementController::class, 'archiveMeasurem
 
 
 Route::get('/archive', [MeasurementController::class, 'showPastMeasurements']);
-
-Route::get('/google-autocomplete', [GoogleController::class, 'index']);
