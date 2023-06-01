@@ -45,6 +45,7 @@ convertible format and stored.
 - fixed positioning
 - on click marker -> show values of pH, temp, date, time
 - click on table entry -> go to marker in Google Map
+- center initialized map at first measurement point
 
 ### Further Possible Improvements
 - add Graphs
