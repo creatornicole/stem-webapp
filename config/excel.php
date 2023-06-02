@@ -162,21 +162,21 @@ return [
     |
     */
     'extension_detector' => [
-        'xlsx'     => Maatwebsite\Excel\Facades\Excel::class::XLSX,
-        'xlsm'     => Maatwebsite\Excel\Facades\Excel::class::XLSX,
-        'xltx'     => Maatwebsite\Excel\Facades\Excel::class::XLSX,
-        'xltm'     => Maatwebsite\Excel\Facades\Excel::class::XLSX,
-        'xls'      => Maatwebsite\Excel\Facades\Excel::class::XLS,
-        'xlt'      => Maatwebsite\Excel\Facades\Excel::class::XLS,
-        'ods'      => Maatwebsite\Excel\Facades\Excel::class::ODS,
-        'ots'      => Maatwebsite\Excel\Facades\Excel::class::ODS,
-        'slk'      => Maatwebsite\Excel\Facades\Excel::class::SLK,
-        'xml'      => Maatwebsite\Excel\Facades\Excel::class::XML,
-        'gnumeric' => Maatwebsite\Excel\Facades\Excel::class::GNUMERIC,
-        'htm'      => Maatwebsite\Excel\Facades\Excel::class::HTML,
-        'html'     => Maatwebsite\Excel\Facades\Excel::class::HTML,
-        'csv'      => Maatwebsite\Excel\Facades\Excel::class::CSV,
-        'tsv'      => Maatwebsite\Excel\Facades\Excel::class::TSV,
+        'xlsx'     => Excel::XLSX,
+        'xlsm'     => Excel::XLSX,
+        'xltx'     => Excel::XLSX,
+        'xltm'     => Excel::XLSX,
+        'xls'      => Excel::XLS,
+        'xlt'      => Excel::XLS,
+        'ods'      => Excel::ODS,
+        'ots'      => Excel::ODS,
+        'slk'      => Excel::SLK,
+        'xml'      => Excel::XML,
+        'gnumeric' => Excel::GNUMERIC,
+        'htm'      => Excel::HTML,
+        'html'     => Excel::HTML,
+        'csv'      => Excel::CSV,
+        'tsv'      => Excel::TSV,
 
         /*
         |--------------------------------------------------------------------------
@@ -187,7 +187,8 @@ return [
         | Available options: Excel::MPDF | Excel::TCPDF | Excel::DOMPDF
         |
         */
-        'pdf'      => Maatwebsite\Excel\Facades\Excel::class::DOMPDF,
+        'pdf'      => Excel::DOMPDF,
+        
     ],
 
     /*
