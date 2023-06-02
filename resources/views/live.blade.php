@@ -16,7 +16,7 @@
             <span class="card-title">
                 {{ $heading }}
                 <div style="float: right;">
-                    <a href="" class="btn-sm">Safe</a>
+                    <a href="/live/export" class="btn-sm">Safe</a>
                     <a href="/live/changeStatus" class="btn-sm btn-success">Archive</a>   
                 </div>
             </span>
