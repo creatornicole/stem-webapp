@@ -53,3 +53,11 @@ convertible format and stored.
 ## References
 - [How to Add Google Map in Larvael?](https://www.itsolutionstuff.com/post/how-to-add-google-map-in-laravelexample.html)
 - [Get Lat Long from Address](https://www.latlong.net/convert-address-to-lat-long.html)
+
+02.06.2023
+- [Installation Laravel Excel](https://docs.laravel-excel.com/2.1/getting-started/)
+- [Laravel 10 Import Export CSV and EXCEL File](https://techsolutionstuff.com/post/laravel-10-import-export-csv-and-excel-file)
+- [Determine right version for compatibility with Laravel Excel](https://laracasts.com/discuss/channels/laravel/laravel-excel-not-working-1)
+- [Correct Versions of maatwebsite/excel according to laravel version](https://laravelshift.com/can-i-upgrade-laravel/maatwebsite/excel)
+- [Solution for 'Undefined type Maatwebsite\Excel\...'](https://stackoverflow.com/questions/71073100/undefined-type-maatwebsite-excel-concerns-tomodel)
+- [Laravel Excel Export data in Excel, CSV & multiple sheet export](https://www.youtube.com/watch?v=VUet2wq22-o) 
